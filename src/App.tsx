@@ -1,6 +1,6 @@
 import { createBrowserRouter, Route, RouterProvider, Routes } from 'react-router-dom'
 import { Styled } from './App.styled'
-import { Header } from './components/vavbar/navbar'
+import { Navbar } from './components/vavbar/navbar'
 import { Home } from './pages/home/home';
 
 const router = createBrowserRouter([
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
 
 function App() {
   return <Styled.App>
-    <Header></Header>
+    <Navbar></Navbar>
     <RouterProvider router={router} />
    
   </Styled.App>

@@ -1,15 +1,25 @@
 import styled from 'styled-components';
+import { containerStyle } from '../../responsiveStyles/responsiveContainer';
+import { defaultTheme } from '../../themes/default';
 export const StyledNavbar = {
-    Container: styled.nav`
-    padding: .5rem 1rem`,
 
-    NavbarBrand: styled.a`
+    Container: styled.div`
+    padding: .5rem 1rem
+    ${containerStyle}
+    `,
+
+    NavbarBrand: styled.div`
     font-family: titillium web,sans-serif;
     font-size: 1.5rem;
     padding-top: 0;
+    padding-bottom: 0.25rem;
     margin-right: 2rem;
-    color: #5cb85c;
-    text-decoration: none;
+    float: left;
+    a {
+        color: var(--color-primary);
+        text-decoration: none;
+
+    }
     `
     , RightMenu: styled.ul`
     float: right;
@@ -25,4 +35,6 @@ export const StyledNavbar = {
         color: rgba(0,0,0,.3);
     }
     `
+    , End: styled.div`
+    clear: both;clear: both`
 }

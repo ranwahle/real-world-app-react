@@ -1,7 +1,8 @@
 import { StyledNavbar } from './navbar.styled';
-export const Header = () => <>
+export const Navbar = () => <>
     <StyledNavbar.Container>
-        <StyledNavbar.NavbarBrand href="/#/">Conduit</StyledNavbar.NavbarBrand>
+        <StyledNavbar.NavbarBrand>
+            <a href="/#/">conduit</a></StyledNavbar.NavbarBrand>
         <StyledNavbar.RightMenu>
             <StyledNavbar.NavItem>
                 <a href='/#/'>Home</a>
@@ -17,5 +18,6 @@ export const Header = () => <>
                 </a>
             </StyledNavbar.NavItem>
         </StyledNavbar.RightMenu>
+        <StyledNavbar.End></StyledNavbar.End>
     </StyledNavbar.Container>
 </>
