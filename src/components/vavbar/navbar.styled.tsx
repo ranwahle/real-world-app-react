@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-export const StyledHeader = {
-    NavBar: styled.nav`
+export const StyledNavbar = {
+    Container: styled.nav`
     padding: .5rem 1rem`,
 
     NavbarBrand: styled.a`
