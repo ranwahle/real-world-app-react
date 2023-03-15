@@ -24,6 +24,7 @@ export const StyledNavbar = {
     , RightMenu: styled.ul`
     float: right;
     list-style: none;
+    margin: 0;
     `
     , NavItem: styled.li`
     float: left;
