@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const StyledHeader = styled.div`
+const StyledHeader = styled.div`
     background-color: var(--color-primary);
     color: white;
     text-align: center;
@@ -22,3 +22,5 @@ export const StyledHeader = styled.div`
 
     }
 `;
+
+export default StyledHeader;
