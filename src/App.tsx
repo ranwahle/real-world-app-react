@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   createBrowserRouter,
   Route,
@@ -16,13 +17,17 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient();
+
 function App() {
   return (
     <GlobalThemeProvider>
-      <StyledApp>
-        <Navbar></Navbar>
-        <RouterProvider router={router} />
-      </StyledApp>
+      <QueryClientProvider client={queryClient}>
+        <StyledApp>
+          <Navbar></Navbar>
+          <RouterProvider router={router} />
+        </StyledApp>
+      </QueryClientProvider>
     </GlobalThemeProvider>
   );
 }

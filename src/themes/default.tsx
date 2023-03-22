@@ -1,8 +1,13 @@
 const colors = {
   primary: "#5cb85c",
+  tagBackground: "#818a91",
+  tagColor: "#fff",
+  tagsBackground: "#f3f3f3",
 };
 const spacing = {
   default: "15px",
+  pageTop: "1.5rem",
+  tagContainerSpacing: "5px 10px 10px",
 };
 
 export const defaultTheme = {
