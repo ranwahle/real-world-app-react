@@ -40,7 +40,7 @@ i18nInstance
   .init(initOptions, (error) => {
     if (error) {
       // eslint-disable-next-line no-console
-      console.log("Error occured when initialize the i18next: ", error);
+      console.log("Error occurred when initialize the i18next: ", error);
     }
     return true;
   });
