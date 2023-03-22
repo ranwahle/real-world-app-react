@@ -1,0 +1,12 @@
+{
+    "header": {
+        "companyName": "Conduit",
+        "subtitle": "A place to share your knowledge."
+    },
+    "navigationMenu": {
+        "home": "Home",
+        "signIn": "Sign In",
+        "signUp": "Sign Up"
+    
+    }
+}
