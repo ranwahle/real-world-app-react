@@ -1,24 +1,28 @@
+import { useTranslation } from '../../hooks/useTranslation';
 import { StyledNavbar } from './navbar.styled';
-export const Navbar = () => <>
-    <StyledNavbar.Container>
-        <StyledNavbar.NavbarBrand>
-            <a href="/#/">conduit</a>
-        </StyledNavbar.NavbarBrand>
-        <StyledNavbar.RightMenu>
-            <StyledNavbar.NavItem>
-                <a href='/#/'>Home</a>
-            </StyledNavbar.NavItem>
-            <StyledNavbar.NavItem>
-                <a>
-                    Sign in
-                </a>
-            </StyledNavbar.NavItem>
-            <StyledNavbar.NavItem>
-                <a>
-                    Sign up
-                </a>
-            </StyledNavbar.NavItem>
-        </StyledNavbar.RightMenu>
-        <StyledNavbar.End></StyledNavbar.End>
-    </StyledNavbar.Container>
-</>
+export const Navbar = () => {
+    const { t } = useTranslation();
+    return <>
+        <StyledNavbar.Container>
+            <StyledNavbar.NavbarBrand>
+                <a href="/#/">{ t('header.companyName')}</a>
+            </StyledNavbar.NavbarBrand>
+            <StyledNavbar.RightMenu>
+                <StyledNavbar.NavItem>
+                    <a href='/#/'>{ t('navigationMenu.home')}</a>
+                </StyledNavbar.NavItem>
+                <StyledNavbar.NavItem>
+                    <a>
+                        { t('navigationMenu.signIn')}
+                    </a>
+                </StyledNavbar.NavItem>
+                <StyledNavbar.NavItem>
+                    <a>
+                        {t('navigationMenu.signUp')}
+                    </a>
+                </StyledNavbar.NavItem>
+            </StyledNavbar.RightMenu>
+            <StyledNavbar.End></StyledNavbar.End>
+        </StyledNavbar.Container>
+    </>;
+}
