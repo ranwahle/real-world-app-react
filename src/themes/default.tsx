@@ -1,4 +1,11 @@
-import { css } from 'styled-components'
-export const defaultTheme = css`
-            --color-primary: #5cb85c;
-    `
+const colors = {
+  primary: "#5cb85c",
+};
+const spacing = {
+  default: "15px",
+};
+
+export const defaultTheme = {
+  colors,
+  spacing,
+};

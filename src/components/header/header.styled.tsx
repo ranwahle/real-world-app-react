@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
-  background-color: var(--color-primary);
+  background-color: ${({ theme }) => theme.colors.primary};
   color: white;
   text-align: center;
   padding: 2rem;

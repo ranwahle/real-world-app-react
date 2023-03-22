@@ -1,12 +1,10 @@
 import { css } from "styled-components";
 
-const containerPadding = "15px";
-
 const containerStyle = css`
   margin-left: auto;
   margin-right: auto;
-  padding-left: ${containerPadding};
-  padding-right: ${containerPadding};
+  padding-left: ${({ theme }) => `${theme.spacing.default}`};
+  padding-right: ${({ theme }) => `${theme.spacing.default}`};
 
   @media (min-width: 544px) {
     max-width: 500px;

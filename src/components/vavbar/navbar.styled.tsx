@@ -14,7 +14,7 @@ const NavbarBrand = styled.div`
   margin-right: 2rem;
   float: left;
   a {
-    color: var(--color-primary);
+    color: ${({ theme }) => `${theme.colors.primary}`};
     text-decoration: none;
   }
 `;
