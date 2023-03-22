@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { containerStyle } from "../../responsiveStyles/responsiveContainer";
+import containerStyle from "../../responsiveStyles/responsiveContainer";
 import { defaultTheme } from "../../themes/default";
 
 const Container = styled.div`

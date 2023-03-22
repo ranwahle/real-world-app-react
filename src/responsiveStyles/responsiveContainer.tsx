@@ -1,26 +1,24 @@
-import { css } from 'styled-components';
-const ScreenWidth = {
-    tabletMini: { screen: 544, maxWith: 500 },
-    tablet: { screen: 768, maxWith: 720 },
-    laptop: { screen: 992, maxWith: 940 },
-    desktop: { screen: 1200 ,maxWith: 1140 },
-}
+import { css } from "styled-components";
 
-const containerPadding = '15px';
+const containerPadding = "15px";
 
-export const containerStyle = css`
-    ${Object.entries(ScreenWidth).sort((item1, item2) => {
-        return item1[1].screen - item2[1].screen
-    } ).map(([key, value]) => {
-        return `
-            @media (min-width: ${value.screen}px) {
-                max-width: ${value.maxWith}px;
-            }
-        `
-    })}
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: ${containerPadding};
-    padding-right:  ${containerPadding};
+const containerStyle = css`
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ${containerPadding};
+  padding-right: ${containerPadding};
 
-`
+  @media (min-width: 544px) {
+    max-width: 500px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 940px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+`;
+export default containerStyle;
