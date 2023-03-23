@@ -31,7 +31,7 @@ const FavoritedCount = styled.button`
   background: none;
   ${BaseButton}
   ${SmallButton}
-    ${PrimaryButton}
+  ${PrimaryButton}
 `;
 
 export default {
