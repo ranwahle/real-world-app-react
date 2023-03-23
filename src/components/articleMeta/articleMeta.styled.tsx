@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BaseButton, PrimaryButton, SmallButton } from "../../styles/button";
+import { baseButton, primaryButton, smallButton } from "../../styles/button";
 
 const AuthorImage = styled.img`
   display: inline-block;
@@ -29,9 +29,9 @@ const Info = styled.div`
 const FavoritedCount = styled.button`
   float: right;
   background: none;
-  ${BaseButton}
-  ${SmallButton}
-  ${PrimaryButton}
+  ${baseButton}
+  ${smallButton}
+  ${primaryButton}
 `;
 
 export default {
