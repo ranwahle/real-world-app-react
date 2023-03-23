@@ -1,12 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import {
-  createBrowserRouter,
-  Route,
-  RouterProvider,
-  Routes,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import StyledApp from "./App.styled";
-import * as navbar from "./components/vavbar/navbar";
+import Navbar from "./components/navbar/navbar";
 import { Home } from "./pages/home/home";
 import { GlobalThemeProvider } from "./providers/globalThemeProvider";
 
@@ -24,7 +19,7 @@ function App() {
     <GlobalThemeProvider>
       <QueryClientProvider client={queryClient}>
         <StyledApp>
-          <navbar.Navbar></navbar.Navbar>
+          <Navbar />
           <RouterProvider router={router} />
         </StyledApp>
       </QueryClientProvider>

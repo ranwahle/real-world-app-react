@@ -1,6 +1,6 @@
 import { useTranslation } from "../../hooks/useTranslation";
 import StyledNavbar from "./navbar.styled";
-export const Navbar = () => {
+const Navbar = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -24,3 +24,5 @@ export const Navbar = () => {
     </>
   );
 };
+
+export default Navbar;
