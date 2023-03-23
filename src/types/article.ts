@@ -1,8 +1,8 @@
-import { Author } from "./author";
+import { IAuthor } from "./author";
 
 export interface IArticle {
   slug: string;
-  author: Author;
+  author: IAuthor;
   body: string;
   createdAt: Date;
   description: string;

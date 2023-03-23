@@ -1,4 +1,4 @@
-export interface Author {
+export interface IAuthor {
   bio: string;
   following: boolean;
   image: string;
