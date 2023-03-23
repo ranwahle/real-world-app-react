@@ -6,9 +6,9 @@ const colors = {
   tagsBackground: "#f3f3f3",
   tagBackgroundHover: "#687077",
   articleTitle: "#373a3c",
-  articleDescription: "#999",
   text: "#999",
 };
+
 const spacing = {
   default: "15px",
   pageTop: "1.5rem",

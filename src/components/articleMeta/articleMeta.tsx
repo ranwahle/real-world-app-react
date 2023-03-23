@@ -31,7 +31,7 @@ const ArticleMeta = ({ article }: Props) => {
         </>
       </Styled.Info>
       <Styled.FavoritedCount>
-        <i className="ion-heart"></i>
+        <i className="ion-heart"> </i>
         {article.favoritesCount}
       </Styled.FavoritedCount>
     </>

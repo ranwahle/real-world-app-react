@@ -1,17 +1,9 @@
 import styled from "styled-components";
-
-const tagItemSidePadding = "0.6em";
-const tagItemTopBottomPadding = "0.1rem";
+import { chip } from "../../styles/chip";
 
 const TagItem = styled.a`
-  padding-right: ${tagItemSidePadding};
-  padding-left: ${tagItemSidePadding};
-  padding-top: ${tagItemTopBottomPadding};
-  padding-bottom: ${tagItemTopBottomPadding};
-  border-radius: 10rem;
-  margin-right: 3px;
+  ${chip}
   margin-bottom: 0.2rem;
-  font-size: ${({ theme }) => theme.typography.small};
   text-decoration: none;
   background-color: ${({ theme }) => theme.colors.tagBackground};
   color: ${({ theme }) => theme.colors.tagColor};
