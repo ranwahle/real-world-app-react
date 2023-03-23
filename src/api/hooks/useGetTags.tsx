@@ -1,5 +1,11 @@
-import { useQuery } from 'react-query';
+import { useQuery } from "@tanstack/react-query";
+import apiClient from "./config";
 
-export const useGetTags = () => { 
-    
-}
+const getTags = async () => {
+  const { data } = await apiClient.get("/api/tags");
+  return data.tags;
+};
+
+const useGetTags = () => useQuery(["tags"], getTags);
+
+export default useGetTags;
