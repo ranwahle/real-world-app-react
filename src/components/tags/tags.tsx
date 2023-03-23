@@ -2,13 +2,13 @@ import useGetTags from "../../api/hooks/useGetTags";
 import { useTranslation } from "../../hooks/useTranslation";
 import Styled from "./tags.styled";
 export const Tags = () => {
-  const { data: tagsData } = useGetTags();
+  const { data: tags } = useGetTags();
   const { t } = useTranslation();
   return (
     <Styled.TagsContainer>
       <p>{t("tags.popularTags")}</p>
       <Styled.TagList>
-        {tagsData?.tags?.map((tag: string) => (
+        {tags?.map((tag: string) => (
           <Styled.TagItem href="#" key={tag}>
             {tag}
           </Styled.TagItem>

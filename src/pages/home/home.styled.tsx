@@ -10,6 +10,8 @@ const PageContainer = styled.div`
 
 const FeedContainer = styled.div`
   width: 67%;
+  padding-left: ${({ theme }) => theme.spacing.containerSidePadding};
+  padding-right: ${({ theme }) => theme.spacing.containerSidePadding};
 `;
 const SidBar = styled.div`
     @media (min-width: 768px) {
@@ -21,10 +23,14 @@ const TitleLink = styled.a`
   color: ${({ theme }) => theme.colors.primary};
   font-size: 16px;
 `;
+const Separator = styled.hr`
+  color: ${({ theme }) => theme.colors.primary};
+`;
 
 export default {
   FeedContainer,
   SidBar,
   PageContainer,
   TitleLink,
+  Separator,
 };

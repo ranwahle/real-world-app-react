@@ -6,7 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import StyledApp from "./App.styled";
-import { Navbar } from "./components/vavbar/navbar";
+import * as navbar from "./components/vavbar/navbar";
 import { Home } from "./pages/home/home";
 import { GlobalThemeProvider } from "./providers/globalThemeProvider";
 
@@ -24,7 +24,7 @@ function App() {
     <GlobalThemeProvider>
       <QueryClientProvider client={queryClient}>
         <StyledApp>
-          <Navbar></Navbar>
+          <navbar.Navbar></navbar.Navbar>
           <RouterProvider router={router} />
         </StyledApp>
       </QueryClientProvider>

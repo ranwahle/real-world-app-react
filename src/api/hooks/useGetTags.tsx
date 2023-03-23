@@ -3,7 +3,7 @@ import apiClient from "./config";
 
 const getTags = async () => {
   const { data } = await apiClient.get("/api/tags");
-  return data;
+  return data.tags;
 };
 
 const useGetTags = () => useQuery(["tags"], getTags);

@@ -13,5 +13,8 @@
   },
   "home": {
     "globalFeed": "Global Feed"
+  },
+  "article": {
+    "readMore": "Read more..."
   }
 }

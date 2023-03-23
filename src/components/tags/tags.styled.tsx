@@ -11,6 +11,7 @@ const TagItem = styled.a`
   border-radius: 10rem;
   margin-right: 3px;
   margin-bottom: 0.2rem;
+  font-size: ${({ theme }) => theme.typography.small};
   text-decoration: none;
   background-color: ${({ theme }) => theme.colors.tagBackground};
   color: ${({ theme }) => theme.colors.tagColor};
