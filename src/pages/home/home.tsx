@@ -1,25 +1,15 @@
-import useGetArticles from "../../api/hooks/useGetArticles";
+import ArticlesList from "../../components/articlesList/articlesList";
 import { Header } from "../../components/header/header";
 import { Tags } from "../../components/tags/tags";
-import { useTranslation } from "../../hooks/useTranslation";
 import Styled from "./home.styled";
-import Article from "../../components/article/article";
-import { IArticle } from "../../types/article";
 export const Home = () => {
-  const { t } = useTranslation();
-  const { data: articles } = useGetArticles(10, 10);
   return (
     <>
       <Header />
       <Styled.PageContainer>
-        <Styled.FeedContainer>
-          <Styled.TitleLink>{t("home.globalFeed")}</Styled.TitleLink>
-          {(articles as IArticle[])?.map((article: any) => (
-            <Article key={article.slug} article={article}></Article>
-          ))}
-        </Styled.FeedContainer>
+        <ArticlesList />
         <Styled.SidBar>
-          <Tags></Tags>
+          <Tags />
         </Styled.SidBar>
       </Styled.PageContainer>
     </>

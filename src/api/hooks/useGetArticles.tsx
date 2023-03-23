@@ -6,7 +6,7 @@ const getArticles = async (query: { queryKey: any[] }) => {
   const { data } = await apiClient.get(
     `/api/articles?limit=${limit}&offset=${offset}`
   );
-  return data.articles;
+  return data;
 };
 
 const useGetArticles = (limit = 10, offset = 10) =>
