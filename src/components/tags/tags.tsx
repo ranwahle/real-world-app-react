@@ -4,13 +4,14 @@ import Styled from "./tags.styled";
 export const Tags = () => {
   const { data: tagsData } = useGetTags();
   const { t } = useTranslation();
-  console.log("tags", tagsData);
   return (
     <Styled.TagsContainer>
-      {t("tags.popularTags")}
+      <p>{t("tags.popularTags")}</p>
       <Styled.TagList>
         {tagsData?.tags?.map((tag: string) => (
-          <Styled.TagItem key={tag}>{tag}</Styled.TagItem>
+          <Styled.TagItem href="#" key={tag}>
+            {tag}
+          </Styled.TagItem>
         ))}
       </Styled.TagList>
     </Styled.TagsContainer>
