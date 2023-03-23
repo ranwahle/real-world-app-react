@@ -23,7 +23,7 @@ const Info = styled.div`
   display: inline-block;
   vertical-align: middle;
   line-height: 1rem;
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.lightText};
 `;
 
 const FavoritedCount = styled.button`

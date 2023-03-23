@@ -7,7 +7,7 @@ import Article from "../../components/article/article";
 import { IArticle } from "../../types/article";
 export const Home = () => {
   const { t } = useTranslation();
-  const { data: articles } = useGetArticles();
+  const { data: articles } = useGetArticles(10, 10);
   return (
     <>
       <Header />

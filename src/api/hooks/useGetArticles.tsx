@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import apiClient from "./config";
 
-const getArticles = async (key: string, limit: number, offset: number) => {
+const getArticles = async (query: { queryKey: any[] }) => {
+  const [_key, limit, offset] = query.queryKey;
   const { data } = await apiClient.get(
     `/api/articles?limit=${limit}&offset=${offset}`
   );

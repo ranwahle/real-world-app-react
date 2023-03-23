@@ -5,7 +5,7 @@ interface Props {
   article: IArticle;
 }
 
-const dateFormatOptions = {
+const dateFormatOptions: Intl.DateTimeFormatOptions = {
   year: "numeric",
   month: "short",
   day: "numeric",

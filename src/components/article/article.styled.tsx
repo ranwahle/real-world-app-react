@@ -18,13 +18,13 @@ const Description = styled.p`
 `;
 
 const ReadMore = styled.span`
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.lightText};
   font-size: ${({ theme }) => theme.typography.small};
 `;
 
 const Tag = styled.li`
   ${chip}
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.lightText};
 `;
 
 const TagsList = styled.ul`

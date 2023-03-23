@@ -7,6 +7,7 @@ const colors = {
   tagBackgroundHover: "#687077",
   articleTitle: "#373a3c",
   text: "#999",
+  lightText: "#bbb",
 };
 
 const spacing = {
